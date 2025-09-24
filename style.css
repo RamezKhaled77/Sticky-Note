@@ -1,0 +1,97 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+body {
+  background-color: #222438;
+  margin: 0;
+  font-family: "Nunito", sans-serif;
+}
+main {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+
+  background-image: repeating-linear-gradient(
+      to right,
+      transparent 0 50px,
+      #fff1 50px 51px
+    ),
+    repeating-linear-gradient(to bottom, transparent 0 50px, #fff1 50px 51px);
+  position: relative;
+}
+form {
+  background-color: #eee;
+  width: max-content;
+  padding: 6px;
+  margin: 11px;
+  border-radius: 25px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  -webkit-border-radius: 25px;
+  -moz-border-radius: 25px;
+  -ms-border-radius: 25px;
+  -o-border-radius: 25px;
+}
+form input,
+button {
+  width: 30px;
+  height: 30px;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+  font-size: large;
+  cursor: pointer;
+}
+form input::-webkit-color-swatch-wrapper {
+  padding: 0;
+}
+form input::-webkit-color-swatch {
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+form button {
+  font-size: x-large;
+  font-weight: 600;
+}
+#list textarea {
+  all: unset;
+  color: #d6d6d6d6;
+  font-size: 20px;
+  font-weight: 600;
+  overflow: hidden;
+}
+#list .note {
+  padding: 13px;
+  background-color: #333;
+  width: max-content;
+  border-top: 30px solid #fab12f;
+  box-shadow: 0 20px 50px #0004;
+  position: absolute;
+  top: 60px;
+  left: 50px;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+#list .note span {
+  position: absolute;
+  bottom: 100%;
+  right: 0;
+  height: 30px;
+  font-family: cursive;
+  font-size: larger;
+  cursor: pointer;
+  padding: 0 10px;
+  transition: all 0.4s;
+  &:hover {
+    color: rgb(247, 41, 5);
+  }
+}
