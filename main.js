@@ -15,7 +15,6 @@ createBtn.addEventListener("click", () => {
     textArea.focus();
     textArea.addEventListener("input", () => {
       textArea.style.height = textArea.scrollHeight + "px";
-      console.log(textArea.scrollHeight, "input");
     });
   }
 });
@@ -45,6 +44,10 @@ document.addEventListener("mousedown", (e) => {
     note.dom = e.target;
     note.x = note.dom.getBoundingClientRect().left;
     note.y = note.dom.getBoundingClientRect().top;
+    e.target.children[1].addEventListener("input", () => {
+      e.target.children[1].style.height =
+        e.target.children[1].scrollHeight + "px";
+    });
   }
 });
 
