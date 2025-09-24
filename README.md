@@ -47,18 +47,6 @@ This project demonstrates how a fully interactive and persistent application can
 
 ---
 
-## ⚙️ Installation & Setup
-
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/username/sticky-notes-app.git
-   ```
-2. Open the project folder.
-3. Launch the app by opening `index.html` in your browser.
-
-_(Optional: use Live Server for a smoother development experience)_
-
----
 
 ## 🎮 Usage
 
